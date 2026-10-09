@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install (CPU-only PyTorch keeps it fast)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy matplotlib pillow pytest
+      - run: pytest -q
+      - name: Smoke-test the experiment pipeline
+        run: python experiments/run_all.py --quick --out results_quick

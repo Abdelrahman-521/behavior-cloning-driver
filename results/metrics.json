@@ -1,0 +1,156 @@
+{
+  "results": {
+    "Expert (cheats: reads the true track geometry)": {
+      "unseen tracks, solid walls": {
+        "lap_completion": 0.95,
+        "crash_rate": 0.05,
+        "mean_progress": 0.9745814108717757,
+        "mean_abs_lateral": 0.12933524799975998,
+        "mean_speed": 1.1710779450875377,
+        "episodes": 60
+      },
+      "unseen tracks, 30% wall gaps": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.12047056687325217,
+        "mean_speed": 1.1933005852339305,
+        "episodes": 60
+      },
+      "gaps + lidar noise": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.11727171330767197,
+        "mean_speed": 1.2015666446993085,
+        "episodes": 60
+      }
+    },
+    "1. Course version": {
+      "unseen tracks, solid walls": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.11558221286971718,
+        "mean_speed": 1.1359083933467644,
+        "episodes": 60
+      },
+      "unseen tracks, 30% wall gaps": {
+        "lap_completion": 0.0,
+        "crash_rate": 1.0,
+        "mean_progress": 0.06948078271288946,
+        "mean_abs_lateral": 0.15698045420656387,
+        "mean_speed": 1.2646510746461808,
+        "episodes": 60
+      },
+      "gaps + lidar noise": {
+        "lap_completion": 0.0,
+        "crash_rate": 1.0,
+        "mean_progress": 0.06624280256382788,
+        "mean_abs_lateral": 0.1410905290730176,
+        "mean_speed": 1.2877037982972088,
+        "episodes": 60
+      }
+    },
+    "2. + more tracks, noise injection": {
+      "unseen tracks, solid walls": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.13059234376341525,
+        "mean_speed": 1.164838163399739,
+        "episodes": 60
+      },
+      "unseen tracks, 30% wall gaps": {
+        "lap_completion": 0.0,
+        "crash_rate": 0.9833333333333333,
+        "mean_progress": 0.21611957007660007,
+        "mean_abs_lateral": 0.11705895492291676,
+        "mean_speed": 0.8550116483719299,
+        "episodes": 60
+      },
+      "gaps + lidar noise": {
+        "lap_completion": 0.016666666666666666,
+        "crash_rate": 0.9833333333333333,
+        "mean_progress": 0.2563985990011488,
+        "mean_abs_lateral": 0.11884045148913587,
+        "mean_speed": 0.8399347673995443,
+        "episodes": 60
+      }
+    },
+    "3. + wall-gap training": {
+      "unseen tracks, solid walls": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.1278644554083089,
+        "mean_speed": 1.1700367980159865,
+        "episodes": 60
+      },
+      "unseen tracks, 30% wall gaps": {
+        "lap_completion": 0.95,
+        "crash_rate": 0.05,
+        "mean_progress": 0.965938774407178,
+        "mean_abs_lateral": 0.11641007752216091,
+        "mean_speed": 1.1834866213594133,
+        "episodes": 60
+      },
+      "gaps + lidar noise": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.11317973765223381,
+        "mean_speed": 1.1876510875331718,
+        "episodes": 60
+      }
+    },
+    "4. + DAgger": {
+      "unseen tracks, solid walls": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.127852020667174,
+        "mean_speed": 1.1775806486776585,
+        "episodes": 60
+      },
+      "unseen tracks, 30% wall gaps": {
+        "lap_completion": 0.9166666666666666,
+        "crash_rate": 0.08333333333333333,
+        "mean_progress": 0.9368192862565465,
+        "mean_abs_lateral": 0.11682002402283118,
+        "mean_speed": 1.1888178613712712,
+        "episodes": 60
+      },
+      "gaps + lidar noise": {
+        "lap_completion": 1.0,
+        "crash_rate": 0.0,
+        "mean_progress": 1.0,
+        "mean_abs_lateral": 0.11249795221900043,
+        "mean_speed": 1.19048718216678,
+        "episodes": 60
+      }
+    }
+  },
+  "dagger_rounds": [
+    {
+      "round": 1,
+      "samples": 7500,
+      "gappy_lap_completion": 0.95
+    },
+    {
+      "round": 2,
+      "samples": 9000,
+      "gappy_lap_completion": 0.95
+    },
+    {
+      "round": 3,
+      "samples": 10500,
+      "gappy_lap_completion": 0.95
+    },
+    {
+      "round": 4,
+      "samples": 12000,
+      "gappy_lap_completion": 0.95
+    }
+  ]
+}
