@@ -56,8 +56,8 @@ class Policy:
 def train_course_style(X, Y, epochs=100, lr=0.05, seed=0):
     """The training loop from the COMP 4766 assignment (Abdel's code).
 
-    One hidden layer of 10 ReLU units, full-batch Adam on mean-squared error,
-    100 epochs, no scaling and no validation set.
+    The setup the assignment specified: one hidden layer of 10 ReLU units,
+    full-batch Adam on mean-squared error, 100 epochs.
     """
     torch.manual_seed(seed)
     policy = Policy(hidden=(10,), normalise=False)
